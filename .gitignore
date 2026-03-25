@@ -1,0 +1,64 @@
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ==== Virtual environments ====
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# ==== IDE and OS ====
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==== Jupyter ====
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ==== Raw data (do not commit) ====
+data/raw/
+
+# ==== Temporary and log files ====
+*.log
+*.tmp
+*.bak
+
+# ==== Test cache ====
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==== Local only ====
+CLAUDE.md
+
+# ==== Large model artefacts (regenerate by running training pipeline) ====
+# final_model.pkl is ~330 MB (LightGBM with 1000 trees). Excluded from git.
+# Run: python -m src.model_training   to regenerate it.
+models/final_model.pkl
+# Numpy split arrays are ~70 MB total. Excluded from git.
+# Run: python -m src.preprocessing   to regenerate them.
+models/*.npy
