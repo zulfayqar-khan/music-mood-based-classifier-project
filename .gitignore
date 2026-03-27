@@ -38,8 +38,6 @@ desktop.ini
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
 
-# ==== Raw data (do not commit) ====
-data/raw/
 
 # ==== Temporary and log files ====
 *.log
